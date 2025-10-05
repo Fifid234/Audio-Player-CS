@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:MusicPlayer.Avalonia.UI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="MusicPlayer.Avalonia.UI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+		Width="800"
+		Height="450"
+		CanResize="False"
+		WindowStartupLocation="CenterScreen"
+		WindowState="Normal">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Grid ColumnDefinitions="250, *"
+		  ShowGridLines="True">
+
+		<ListBox Grid.Column="0"/>
+
+		<Grid Grid.Column="1"
+			  RowDefinitions="*, 50, 50"
+			  ShowGridLines="True">
+
+			<Grid Grid.Row="1"
+				  ColumnDefinitions="*, 100, *"
+				  ShowGridLines="True">
+				
+			</Grid>
+
+			<Grid Grid.Row="2"
+				  ColumnDefinitions="*, 200, *"
+				  ShowGridLines="True">
+
+			</Grid>
+			
+		</Grid>
+		
+	</Grid>
+
+</Window>
