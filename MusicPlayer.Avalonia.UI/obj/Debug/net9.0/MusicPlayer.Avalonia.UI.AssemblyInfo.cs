@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MusicPlayer.Avalonia.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28fd15395532ca8a6512abe4c7c251b29660f4ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32651c89069ee008f5850ee58393a88c755ae1e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MusicPlayer.Avalonia.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MusicPlayer.Avalonia.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

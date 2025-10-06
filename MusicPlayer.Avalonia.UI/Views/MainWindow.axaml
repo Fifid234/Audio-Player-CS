@@ -15,24 +15,81 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-	<Grid ColumnDefinitions="250, *"
+	<Grid ColumnDefinitions="0, *"
 		  ShowGridLines="True">
 
 		<ListBox Grid.Column="0"/>
 
 		<Grid Grid.Column="1"
-			  RowDefinitions="*, 50, 50"
+			  RowDefinitions="*, 60, 60"
 			  ShowGridLines="True">
+			
+			<TextBlock Grid.Row="0"
+					   Text="Name"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Bottom"
+					   Margin="0, 0, 0, 5"/>
 
 			<Grid Grid.Row="1"
-				  ColumnDefinitions="*, 100, *"
-				  ShowGridLines="True">
+				  ColumnDefinitions="*, 450, *"
+				  ShowGridLines="True"
+				  VerticalAlignment="Center">
+				
+				<TextBlock Grid.Column="0"
+						   Text="00:00"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+				
+				<TextBlock Grid.Column="2"
+						   Text="00:00"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+				
+				<Slider Grid.Column="1"
+						HorizontalAlignment="Stretch"
+						VerticalAlignment="Center"
+						Margin="5, 0, 5, 0"/>
 				
 			</Grid>
 
 			<Grid Grid.Row="2"
-				  ColumnDefinitions="*, 200, *"
+				  ColumnDefinitions="60, *, 60, *, 60"
 				  ShowGridLines="True">
+
+				<Button Grid.Column="0"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Height="50"
+						Width="50"
+						Margin="5"/>
+
+				<Button Grid.Column="1"
+						HorizontalAlignment="Right"
+						VerticalAlignment="Center"
+						Height="50"
+						Width="50"
+						Margin="5"/>
+
+				<Button Grid.Column="2"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Height="50"
+						Width="50"
+						Margin="5"/>
+
+				<Button Grid.Column="3"
+						HorizontalAlignment="Left"
+						VerticalAlignment="Center"
+						Height="50"
+						Width="50"
+						Margin="5"/>
+
+				<Button Grid.Column="4"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Height="50"
+						Width="50"
+						Margin="5"/>
 
 			</Grid>
 			
